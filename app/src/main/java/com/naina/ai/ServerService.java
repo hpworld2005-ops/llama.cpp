@@ -32,7 +32,8 @@ public class ServerService extends Service {
         if (proc == null) {
             try {
                 String bin = getApplicationInfo().nativeLibraryDir + "/libllamaserver.so";
-                String model = getFilesDir().getAbsolutePath() + "/naina.gguf";
+                String model = "/sdcard/Download/Naina.gguf";
+
 
 
                 ProcessBuilder pb = new ProcessBuilder(
