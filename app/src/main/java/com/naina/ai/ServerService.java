@@ -21,7 +21,8 @@ public class ServerService extends Service {
                 "naina", "Naina", NotificationManager.IMPORTANCE_LOW));
         Notification n = new Notification.Builder(this, "naina")
                 .setContentTitle("Naina AI chal raha hai")
-                .setSmallIcon(android.R.drawable.ic_menu_chat)
+                .setSmallIcon(android.R.drawable.stat_notify_chat)
+
                 .build();
         startForeground(1, n);
     }
