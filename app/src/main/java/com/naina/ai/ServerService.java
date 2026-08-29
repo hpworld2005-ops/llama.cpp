@@ -38,8 +38,10 @@ public class ServerService extends Service {
                         bin, "-m", model,
                         "--host", "127.0.0.1",
                         "--port", "8888",
-                        "-c", "2048",
-                        "-t", "4");
+                        "-c", "1024",
+                        "-t", "6",
+                        "--threads-batch", "6");
+
                 pb.redirectErrorStream(true);
                 proc = pb.start();
             } catch (Exception ignored) { }
